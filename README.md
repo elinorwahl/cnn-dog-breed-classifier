@@ -6,9 +6,9 @@
 
 # CNN Dog Breed Classifier
 
-![Sample Output][image1]
-
 Convolutional neural networks are exceptionally useful tools for processing and classifying image data. This project notebook is used to create a pipeline that processes photographic images; given an image of a dog, the algorithm takes a guess at the dog's breed.  If given an image of a human, the code will identify the resembling dog breed.
+
+![Sample Output][image1]
 
 A Keras classifier network built from scratch and trained on the image data was able to achieve an accuracy of 25% when exposed to test images. A pre-trained VGG16 network was able to achieve an accuracy between roughly 32-49%. And a pre-trained Resnet50 network attained an accuracy of roughly 84% when identifying test images, and could correctly identify the subjects of an additional six photos as dogs, humans, or neither.
 
@@ -17,10 +17,6 @@ This repository consists of:
 `dog_app.ipynb`: Jupyter notebook containing the body of the project
 
 `extract_bottleneck_features.py`: Python program used to obtain bottleneck features for each pre-trained network
-
-`bottleneck_features`: Folder used to store necessary bottleneck features for each pre-trained network
-
-`data`: Folder for storing dog and human image data
 
 `haarcascades`: Folder containing an XML file of a Haar feature-based cascade image detector
 
@@ -31,8 +27,6 @@ This repository consists of:
 `requirements`: Folder of software dependencies for the project
 
 `saved_models`: Folder used to store best weights for each classifier model
-
-![Sample Output][image1]
 
 ### Usage
 
