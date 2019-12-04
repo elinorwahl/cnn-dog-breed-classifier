@@ -1,18 +1,24 @@
 [//]: # (Image References)
 
 [image1]: ./images/sample_dog_output.png "Sample Output"
-[image2]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
-[image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
 # CNN Dog Breed Classifier
 
-Convolutional neural networks are exceptionally useful tools for processing and classifying image data. This project notebook is used to create a pipeline that processes photographic images; given an image of a dog, the algorithm takes a guess at the dog's breed.  If given an image of a human, the code will identify the resembling dog breed.
+### Motivation
+
+Convolutional neural networks are exceptionally useful tools for processing and classifying image data. The goal of this project is to create a CNN that takes in pipeline-processed photographic images of dogs, and learns to match the images with labels of dog breeds as accurately as possible. Then an algorithm is used to take new images and determine what dog breed the subject of the image most closely resembles.  If given an image of a human, the code will identify the resembling dog breed. If the subject of the image doesn't look like either a photo of a dog or a human, the algorithm will also be able to identify the subject as neither.
 
 ![Sample Output][image1]
 
+### Results
+
 A Keras classifier network built from scratch and trained on the image data was able to achieve an accuracy of 25% when exposed to test images. A pre-trained VGG16 network was able to achieve an accuracy between roughly 32-49%. And a pre-trained Resnet50 network attained an accuracy of roughly 84% when identifying test images, and could correctly identify the subjects of an additional six photos as dogs, humans, or neither.
 
-This repository consists of:
+### Libraries
+
+This project makes use of the **cv2**, **glob**, **keras**, **matplotlib**, **numpy**, **PIL**, **random**, **sklearn**, and **tqdm** libraries.
+
+### Files
 
 `dog_app.ipynb`: Jupyter notebook containing the body of the project
 
@@ -112,3 +118,7 @@ jupyter notebook dog_app.ipynb
 ```
 
 - (Optional) If you are running the project on your local machine (and not using AWS, Crestle or a similar GPU-enabling platform), before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). Then follow the instructions in the notebook.
+
+### Acknowledgements
+
+This project was done as part of Udacity's [Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025). While this particular version of the dog breed classifier project is not available on GitHub yet, a version that functions in a very similar way may be found [here](https://github.com/udacity/dog-project).
