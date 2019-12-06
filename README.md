@@ -12,7 +12,7 @@ Convolutional neural networks are exceptionally useful tools for processing and 
 
 ### Results
 
-A Keras classifier network built from scratch and trained on the image data was able to achieve an accuracy of 25% when exposed to test images. A pre-trained VGG16 network was able to achieve an accuracy between roughly 32-49%. And a pre-trained Resnet50 network attained an accuracy of roughly 84% when identifying test images, and could correctly identify the subjects of an additional six photos as dogs, humans, or neither.
+A Keras classifier network built from scratch and trained on the image data was able to achieve an accuracy close to or exceeding 20% when exposed to test images. A pre-trained VGG16 network was able to achieve an accuracy between roughly 32-49%. And a pre-trained Resnet50 network attained an accuracy of roughly 84% when identifying test images, and could correctly identify the subjects of an additional six photos as dogs, humans, or neither.
 
 ### Libraries
 
